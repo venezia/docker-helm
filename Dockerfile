@@ -1,7 +1,7 @@
 FROM alpine:3.7
 MAINTAINER Michael Venezia <mvenezia@gmail.com>
 
-ENV HELM_RELEASE=v2.8.2
+ENV HELM_RELEASE=v2.7.2
 ENV HELM_RELEASE_URL=https://storage.googleapis.com/kubernetes-helm/helm-${HELM_RELEASE}-linux-amd64.tar.gz
 
 RUN apk update && apk add wget openssl && \
