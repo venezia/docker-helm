@@ -10,6 +10,6 @@ RUN apk update && apk add wget openssl && \
 
 FROM alpine:3.7
 COPY --from=0 /helm /helm
-RUN apk update && apk add ca-certificates && mkdir -p /root/.helm
+RUN apk update && apk add ca-certificates bash && mkdir -p /root/.helm
 
 
